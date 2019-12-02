@@ -11,3 +11,18 @@ html{
 .imageCenter{
     text-align: center;
 }
+
+a:hover { 
+    color: brown;
+}
+
+img:hover
+{
+    transition: 1s;
+ -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#maintitle{
+    text-shadow: 10px 10px 5px grey;
+}
