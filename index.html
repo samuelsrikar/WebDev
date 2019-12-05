@@ -3,38 +3,54 @@
 
 <head>
     <link rel="stylesheet" href="styles/styles.css">
+    <title>Home</title>
     <meta charset="utf-8">
     <meta name="description" content="The site is about Samuel Srikar">
     <meta name="keywords" content="samuelsrikar,samuel,srikar,bandela">
     <meta name="author" content="Samuel Srikar Bandela">
-    <link rel="shortcut icon" type="image/png" href="images/sam-fav-icon.png"/>
+    <link rel="shortcut icon" type="image/png" href="images/sam-fav-icon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="index-container">
-        <div class="index-main-pane">
-            <h1>Raw thought</h1>
-            <p>The details in the existing a page are obscure ideas floating around.<br>
-                Once all the bits and pieces are fit into their place a structure will emerge.<br>
-                Bluntly put it is under construction. </p>
-            <h2>Things to keep in mind</h2>
-            <ol>
-                <li>Proper naming conventions</li>
-                <li>Response design and layout</li>
-                <li>Decent colour scheming </li>
-            </ol>
-        </div>
-        <div class="index-sub-pane">
-            <img class="index-image-fit" src="images/rocket-img.svg" alt="rocket">
-        </div>
-        <div class="index-bottom-pane">
-            <ul>
-               <li></li>
-               <li></li> 
-               <li></li> 
+        <div class="index-navbar">
+            <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cpp/cpp.html">CPP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-web-pill" data-toggle="pill" href="#pills-contact" role="pill"
+                        aria-controls="pills-web" aria-selected="false">WEB</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-reflections-pill" data-toggle="pill" href="#pills-contact" role="pill"
+                        aria-controls="pills-reflections" aria-selected="false">REFLECTIONS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-about-pill" data-toggle="pill" href="#pills-contact" role="pill"
+                        aria-controls="pills-about" aria-selected="false">ABOUT</a>
+                </li>
             </ul>
+        </div>
+        <div class="index-main-pane">
+            <h1>Introduction</h1>
+            <p>This site has different types of content, as for starters it has concepts of programming in c++<br>
+               and some basics about web technologies.
+            </p>
         </div>
     </div>
 </body>
