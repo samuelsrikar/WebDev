@@ -1,28 +1,60 @@
-html{
-    background-color: darkgray;
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-/* .container {
-    width: 50%;
+
+.index-container{
+    width: 100%;
+    height: 700px;
+    background-color: cornflowerblue;
+}
+
+.index-main-pane{
+    width: 75%;
+    height: 650px;
+    float: left;
+    padding: 50px;
+}
+
+.index-sub-pane{
+    width :25%;
+    height: 650px;
+    float: left;
+    padding: 40px;
+}
+
+.index-bottom-pane{
+    width:100%;
+    height: 50px;
+    float:left;
+}
+
+.index-image-fit{
+    width: 100%;
+    height: 100%;
+}
+
+.index-footer-ul{
+    list-style-type: none;
+}
+
+.index-footer-li{
     
-} */
-
-.imageCenter{
-    text-align: center;
-}
-
-a:hover { 
-    color: brown;
-}
-
-img:hover
-{
-    transition: 1s;
- -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-#maintitle{
-    text-shadow: 10px 10px 5px grey;
 }
