@@ -3,8 +3,9 @@
 
 <head>
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>Cpp</title>
+    <title>SamuelSrikar-Cpp</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="The site is about Samuel Srikar">
     <meta name="keywords" content="samuelsrikar,samuel,srikar,bandela">
     <meta name="author" content="Samuel Srikar Bandela">
@@ -24,6 +25,7 @@
 
 <body>
     <div class="index-container">
+    <div class="float-left"><img src="../images/sam-2.png"></div>
         <div class="index-navbar">
             <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item">
@@ -48,32 +50,37 @@
         </div>
         <div class="index-main-pane">
             <h1>Using data breakpoints in Visual Studio</h1>
-            <p>Many times, it is quite tedious to find out where a variable data is changed. The legacy way<br>
-                of finding it is to follow the variable assignments and it can get complex when the variable <br>
-                has references or pointer types. We must track them all to find where the actual data has <br>
-                changed. But if we see closely all of them are bound to a specific memory location where the <br>
+
+            <p>Many times, it is quite tedious to find out where a variable data is changed. The legacy way
+                of finding it is to follow the variable assignments and it can get complex when the variable 
+                has references or pointer types. We must track them all to find where the actual data has 
+                changed. But if we see closely all of them are bound to a specific memory location where the 
                 data resides. This where the “data breakpoints” in Visual Studio come in.<br><br>
 
                 <b>Note: Data breakpoints will not work if the project has CLR support.</b><br><br>
 
                 For normal variables its strait forward in <a
-                    href="https://devblogs.microsoft.com/cppblog/data-breakpoints-15-8-update/">MSDN Data Points.</a>
+                    href="https://devblogs.microsoft.com/cppblog/data-breakpoints-15-8-update/" target="_blank">MSDN Data Points.</a>
             </p>
+
             <h3>Data points for complex data types like <a
-                    href="https://en.cppreference.com/w/cpp/container/map">std::maps</a></h3>
-            <p>We will take an example program where we need to find where the map value changes for a<br>
-               specific value <br><img  src="cpp-images/data-breakpoint-program.png"><br>
-               Now we have to browse the key and value pairs which we intend to track by hovering <br>
-               <img src="cpp-images/breakpoint-copy-expression.png"><br>
-               The expression copied will be similar to the following expression<br><br>
+                    href="https://en.cppreference.com/w/cpp/container/map" target="_blank">std::maps</a></h3>
+
+            <p>We will take an example program where we need to find where the map value changes for a
+               specific value</p>
+            <img  src="cpp-images/data-breakpoint-program.png">
+            <p>  Now we have to browse the key and value pairs which we intend to track by hovering</p>
+            <img src="cpp-images/breakpoint-copy-expression.png">
+            <p> The expression copied will be similar to the following expression<br><br>
                <b>"((std::_Tree_node<std::pair<int const ,int>,void *>*)0x012d5310)->_Myval.second,view(MapHelper)"</b><br><br>
-               Now remove the <b>,view(MapHelper)</b> at the end and add <b>&</b> at the front of the expression , after this it <br>
+               Now remove the <b>,view(MapHelper)</b> at the end and add <b>&</b> at the front of the expression , after this it 
                would look like <br><br>
-              <b>"&((std::_Tree_node<std::pair<int const ,int>,void *>*)0x012d5310)->_Myval.second,view(MapHelper)"</b><br><br>
-               Now the data breakpoint is set , when ever the data changes at specific address location the<br>
-               break point will hit in debug mode.<br>
-               <img src="cpp-images/breakpoint-data-hit.png"><br>
-               In this way we can track memory locations associated with variables.<br><br>
+              <b>"&((std::_Tree_node<std::pair<int const ,int>,void *>*)0x012d5310)->_Myval.second"</b><br><br>
+               Now the data breakpoint is set , when ever the data changes at specific address location the
+               break point will hit in debug mode.</p>
+            <img src="cpp-images/breakpoint-data-hit.png">
+            <p>In this way we can track memory locations associated with variables.</p>
+            <hr>
             </p>
         </div>
     </div>

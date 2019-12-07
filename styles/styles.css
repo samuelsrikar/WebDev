@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -17,7 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+} */
 
 
 .index-container{
@@ -28,7 +28,6 @@ time, mark, audio, video {
 .index-main-pane{
     width: 75%;
     height: 650px;
-    float: left;
     margin-top: 20px;
     margin-left: 150px;
     font-size: larger;
@@ -51,11 +50,24 @@ time, mark, audio, video {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: lightblue;
+    background-color: rgb(72, 141, 182);
 }
 
 img{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left : 100px;
+    padding-right:20px;
+}
+
+.pill-color{
+    background-color: blue;
+}
+
+.float-left{
+    float:left;
+}
+
+p{
+    width: 1000px;
 }
